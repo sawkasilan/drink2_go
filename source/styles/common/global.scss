@@ -1,1 +1,33 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  background-color: $base-color-body;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+input:active,
+input:hover,
+input:focus {
+outline: none;
+}
+
+a {
+  text-decoration: none;
+}

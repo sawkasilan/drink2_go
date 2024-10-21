@@ -1,0 +1,113 @@
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  min-height: 902px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    min-height: 818px;
+    padding-top: 248px;
+  }
+}
+
+.advantages__badge {
+  text-align: center;
+}
+
+.advantages__title {
+  line-height: 36px;
+  text-align: center;
+  padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    margin-bottom: 26px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    width: 339px;
+    min-height: 94px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 45px;
+    text-align: start;
+    column-gap: 22px;
+  }
+}
+
+.advantages__name {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    font-size: 16px;
+    line-height: 24px;
+    width: 268px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description > br {
+    display: none;
+  }
+}
+
+.advantages__icon--speed {
+  background-image: url("../../icons/icon_features_speed.svg");
+}
+
+.advantages__icon--fit {
+  background-image: url("../../icons/icon_features_fit.svg");
+}
+
+.advantages__icon--energy {
+  background-image: url("../../icons/icon_features_energy.svg");
+}
+
+.advantages__icon--eco {
+  background-image: url("../../icons/icon_features_eco.svg");
+}
+
+.advantages__icon {
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 56px;
+  background-size: 52px 56px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 6px;
+}

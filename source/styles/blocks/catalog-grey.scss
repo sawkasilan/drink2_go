@@ -1,0 +1,7 @@
+.catalog-grey {
+  background-color: $base-color-catalog;
+
+  @media (min-width: $tablet-width) {
+     min-height: 2186px;
+  }
+}
